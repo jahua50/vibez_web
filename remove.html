@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>刪除帳號 - Vibez.AI巧答知心</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            margin-top: 50px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            width: 90%;
+            max-width: 600px;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        p {
+            color: #666;
+            line-height: 1.5;
+        }
+        .steps {
+            list-style: decimal;
+            padding-left: 20px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+        .steps li {
+            margin-bottom: 10px;
+        }
+        .input-field {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .submit-button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .submit-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>刪除帳號 - Vibez.AI巧答知心</h1>
+        <p>感謝您使用 Vibez.AI巧答知心。若您希望刪除您的帳號，請依照以下步驟操作：</p>
+        <ol class="steps">
+            <li>確認您已備份所有重要資料。</li>
+            <li>填寫下方欄位，並提供您的電子郵件地址。</li>
+            <li>點擊「送出」按鈕發送帳號刪除請求。</li>
+        </ol>
+        <form action="submit_delete_request.php" method="post">
+            <input type="email" name="email" class="input-field" placeholder="請輸入您的電子郵件地址" required>
+            <button type="submit" class="submit-button">送出</button>
+        </form>
+        <p>開發人員: Arcdev, 劉家華</p>
+    </div>
+</body>
+</html>
